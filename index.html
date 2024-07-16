@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+#autorotateToggle, #fullscreenToggle {
+background: transparent !important;
+}
+
+.info-hotspot .info-hotspot-header {
+background-color: rgba(103,115,131, 0.4) !important;
+}
+
+.vb-button{
+ color: #FFF;
+  z-index: 100 !important;
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid;
+  font-size: 16px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+</style>
+</head>
+<body class="single-scene ">
+
+<a class="vb-button" href="https://voxbox-pl.nonprod.voxteam.pl/app/cedf997a36e7485bb795797bfbabcfea/project-x/arrange">OTWORZ W VOXBOX</a>
+
+<img src="img/logo.svg" style="width: 72px; z-index:100; position: absolute; top:20px; left:20px;" /> 
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-output">
+        <li class="text">output</li>
+      </a>
+    
+  </ul>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
