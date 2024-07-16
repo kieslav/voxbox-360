@@ -7,48 +7,52 @@
 <style> @-ms-viewport { width: device-width; } </style>
 <link rel="stylesheet" href="vendor/reset.min.css">
 <link rel="stylesheet" href="style.css">
+<style>
+
+#autorotateToggle, #fullscreenToggle {
+background: transparent !important;
+}
+
+.info-hotspot .info-hotspot-header {
+background-color: rgba(103,115,131, 0.4) !important;
+}
+
+.vb-button{
+ color: #FFF;
+  z-index: 100 !important;
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid;
+  font-size: 16px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+</style>
 </head>
+  
 <body class="multiple-scenes ">
+
+<a class="vb-button" href="https://voxbox-pl.nonprod.voxteam.pl/app/cedf997a36e7485bb795797bfbabcfea/project-x/arrange">OTWORZ W VOXBOX</a>
+
+<img src="img/logo.svg" style="width: 72px; z-index:100; position: absolute; top:20px; left:20px;" /> 
 
 <div id="pano"></div>
 
 <div id="sceneList">
   <ul class="scenes">
     
-      <a href="javascript:void(0)" class="scene" data-id="0-bathroom">
-        <li class="text">bathroom</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="1-corridor">
-        <li class="text">corridor</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="2-corridor2">
-        <li class="text">corridor2</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="3-office">
-        <li class="text">office</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="4-livingroom">
-        <li class="text">livingroom</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="5-bedroom">
-        <li class="text">bedroom</li>
+      <a href="javascript:void(0)" class="scene" data-id="0-output">
+        <li class="text">output</li>
       </a>
     
   </ul>
 </div>
 
-<div id="titleBar">
-  <h1 class="sceneName"></h1>
-</div>
-
 <a href="javascript:void(0)" id="autorotateToggle">
-  <img class="icon off" src="img/play.png">
-  <img class="icon on" src="img/pause.png">
 </a>
 
 <a href="javascript:void(0)" id="fullscreenToggle">
