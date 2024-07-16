@@ -42,25 +42,48 @@ background-color: rgba(103,115,131, 0.4) !important;
 
 <div id="pano"></div>
 
-<div id="sceneList">
+<div id="sceneList" style="display:none;">
   <ul class="scenes">
     
-      <a href="javascript:void(0)" class="scene" data-id="0-output">
-        <li class="text">output</li>
+      <a href="javascript:void(0)" class="scene" data-id="0-bathroom">
+        <li class="text">bathroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-corridor">
+        <li class="text">corridor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-corridor2">
+        <li class="text">corridor2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-office">
+        <li class="text">office</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-livingroom">
+        <li class="text">livingroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-bedroom">
+        <li class="text">bedroom</li>
       </a>
     
   </ul>
 </div>
 
+<div id="titleBar" style="display: none;">
+  <h1 class="sceneName"></h1>
+</div>
+
 <a href="javascript:void(0)" id="autorotateToggle">
 </a>
-
 <a href="javascript:void(0)" id="fullscreenToggle">
   <img class="icon off" src="img/fullscreen.png">
   <img class="icon on" src="img/windowed.png">
 </a>
 
-<a href="javascript:void(0)" id="sceneListToggle">
+<a href="javascript:void(0)" id="sceneListToggle" style="display:none;">
   <img class="icon off" src="img/expand.png">
   <img class="icon on" src="img/collapse.png">
 </a>
